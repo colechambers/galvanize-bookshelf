@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "knex": "knex",
+    "heroku-postbuild": "knex migrate:latest",
     "lint": "eslint  --ignore-pattern public/js/vendor",
     "nf": "nf start",
     "nodemon": "nodemon server.js",
